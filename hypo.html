@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Hypothetical</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+
+           *{
+                padding: 0;
+                margin: 0;
+            box-sizing: border-box;}
+                body{
+                background: url(https://www.everydayknow.com/wp-content/uploads/2018/01/hypothetical-questions-reddit.jpg);
+               background-size: cover; 
+               background-attachment: local;
+               background-position: center;
+               background-attachment: fixed;
+               font-family: sans-serif;
+            }
+            .menu-bar{
+                background: white;
+                height: 150px;
+                text-align: center;
+                border-bottom-left-radius: 40%;
+                border-bottom-right-radius: 40%;
+            }
+            .menu-bar ul{
+                display: inline-flex;
+                list-style: none;
+                color: #fff;
+
+            }
+            .menu-bar ul li{
+                width: 120px;
+                border-radius: 20px;
+                margin: 15px;
+                padding: 15px;
+                font-weight: bold;
+                color: black;
+
+            }
+        .menu-bar ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .active,.menu-bar ul li:hover{
+            background-color: #d65106;
+            color: black;
+        }
+        .sub-menu-1{
+            display: none;
+        }
+        .menu-bar{
+            margin-right: 8px;
+        }
+        .menu-bar ul li:hover .sub-menu-1{
+            display:block;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: -15px;
+            background: navajowhite;
+            
+            border-radius: 20px; 
+
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul {
+            display: block;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li{
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            text-align: left;
+            border-radius: 20px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+        {
+            border-bottom: none;
+        }
+         .sub-menu-3{
+            display: none;
+        }
+        .hoverme:hover .sub-menu-3{
+        position: absolute;
+        display: inline-block;
+        margin-top: -20px;
+        margin-left: 81px;
+        background-color: papayawhip;
+        border-radius: 20px;
+        }
+        .name h1{
+            font-family: 'Brush Script MT', cursive;
+            font-size: 100px;
+            text-align: 100px;
+            color: white;
+            margin-top: 140px;
+            margin-left: 20px;
+        }
+        .name h1::first-letter {
+            color: red;
+            font-size: 200px;
+             text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+            0 3px 0 #ccc, 0 4px 0 #ccc,
+            0 5px 0 #ccc, 0 6px 0 #ccc,
+            0 7px 0 #ccc, 0 8px 0 #ccc,
+            0 9px 0 #ccc, 0 10px 0 red,
+            0 11px 0 red, 0 12px 0 red,
+            0 20px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+         .name h1::second-letter {
+            color: red;
+            font-size: 200px;
+             text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+            0 3px 0 #ccc, 0 4px 0 #ccc,
+            0 5px 0 #ccc, 0 6px 0 #ccc,
+            0 7px 0 #ccc, 0 8px 0 #ccc,
+            0 9px 0 #ccc, 0 10px 0 red,
+            0 11px 0 red, 0 12px 0 red,
+            0 20px 30px rgba(0, 0, 0, 0.5);
+        }
+        .welcome h2{
+            text-align: center;
+            font-size: 30px;
+            color: red;
+            font-family: bold;
+            font-weight: bolder;
+            padding-top:250px;
+            border-radius: 20px;
+            padding-bottom: 50px;
+            background: url(https://media.istockphoto.com/photos/question-mark-on-speech-bubble-picture-id1205270037?k=20&m=1205270037&s=612x612&w=0&h=jVE7aYP3_asabfDMWb-BK9IXfMPu4IK0YSaKWSPb-4s=) ;
+             background-size: cover;
+             background-position: 100% -50%;
+             background-repeat: no-repeat;   
+        }
+
+        .welcome h2 span{
+            color: red;
+        }
+        .welcome h2 .span2{
+            color: black;
+            font-size: 30px;
+
+           
+        }
+        .welcome h2 .span3{
+            color: black;
+            font-size:20px;
+            text-align: left;
+        }
+        .slogan h2{
+            color: white;
+            font-size: 30px;
+            font-family: italic;
+            text-align: center;
+            padding: 20px;
+        }
+
+}
+.contact{
+    background-color: transparent;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-left: 165px;
+
+}
+.card{
+    background-color:#6E5B5B;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33%, -20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.card-icon{
+    font-size: 28px;
+    background-color: #ff6348;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+.card:hover .card-icon{
+    background: none;
+    color: #ff6348;
+    transform: scale(1.6);
+}
+.card p{
+    margin-top: 20px;
+    font-weight:300 ;
+    letter-spacing: 2px;
+    max-height:0 ;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+.card:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+
+
+.last{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    height: 150px;
+    padding-top: 50px;
+}
+.answer{
+    font-size: 30px;
+    font-family: sans-serif;
+
+}
+.bot{
+    background-color: white;
+}
+
+
+   </style>
+</head>
+<body>
+    <div class="menu-bar">
+    <ul>
+        <li class="active">
+            <a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
+        <li><a href="#"><i class="fa fa-bars"></i>&nbsp;&nbsp;Info</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Google-Surveys</a></li>
+                    <li><a href="#">Snap-Surveys</a></li>
+                    <li><a href="#">Type-form</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"><i class="fa fa-gears"></i>&nbsp;&nbsp;Services</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Hypothetical</a></li>
+                    <li><a href="#">Survey</a>
+                    
+                    </li>
+                    <li class="hoverme"><a href="#">mobile app</a>
+                <div class="sub-menu-3">
+                <ul>
+                    <li><a href="#">Ios app</a></li>
+                    <li><a href="#">Andriod app</a></li>
+                    <li><a href="#">Webpage</a></li>
+                </ul>
+            </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#gallery"><i class="fa fa-image"></i>&nbsp;&nbsp;Gallery</a></li>
+        
+        <li><a href="#"><i class="fa fa-inr"></i>&nbsp;&nbsp;Premium</a></li>
+        <li><a href="#about"><i class="fa fa-address-book-o"></i>&nbsp&nbspAbout us</a></li>
+        <li class="hoverme"><a href="#contact">&#9742;&nbsp&nbspContact</a>         
+        </li>
+    </ul>
+    </div>
+    <div class="name">
+        <h1>Welcome to questioning-Website</h1>
+    </div>
+
+<br>
+<br>
+<br>
+<br><br><br>
+<br><br>
+<div class="welcome" id="about">
+    <h2>Welcome to <span>Questioning-website</span>
+        <br><span class="span2"><br></span><span class="span3">he art of conversation is changing. Sometimes we are so connected <br>to our screens that we forget to “connect” with those around us.It’<br>s time to change this.Once in a while, it’s nice to sit down, relax, an<br>d just talk. But, chatting can quickly get boring when you stick to s<br>mall talk.After all, there is only so much to say about the weather. <br>Luckily, posing a couple of hypothetical questions can quickly<br> turn a dull chat into an invigorating conversation.<br></span></h2>
+</div>
+<div class="slogan"><h2>" Every question is a hypothetical question for everyone but the person who asks it." <br><span class="author">-Dan Savage</span></h2></div>
+
+
+<br>
+<br>
+<br>
+<br><br><br>
+<br><br><br>
+<br>
+<br>
+<br><br><br>
+<br><br>
+<div class="bot">
+                  <div class="answer">1. If you had the chance, would you want to be pain-free for the rest of your life?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div>
+                  <div class="answer">2. Would you take a $70k/week job offer where you get paid to sit in a pitch-black room and do nothing for 20 hours a day?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div>
+                  <div class="answer">3. What would I hear if I asked a group of people who know you for five adjectives to describe you?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div>
+                  <div class="answer">4. Which place on the planet would you never want to live, and why?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div>
+                  <div class="answer">5. Which famous person’s body would you take over if you were a zombie?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div>
+                  <div class="answer">6. What would your first reaction be if I told you that you had failed?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div>
+                  <div class="answer">7. Would you rather forget about yourself or forget about anyone else?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div>
+                  <div class="answer">8. Will you be able to give up 30 years of your life in exchange for allowing a stranger to die?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div>
+                  <div class="answer">9. Would you take something that removes your body’s need for sleep if it was given to you?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div>
+                  <div class="answer">10. Would you rather have to say anything that comes to mind all the time or never have to say anything at all?</div>
+                  <div><textarea rows="2" cols="500"></textarea></div></div>
+            
+
+
+<div class="contact" id="contact">
+    <div class="contact-info">
+    <div class="card">
+         <i class="card-icon fa fa-envelope"></i>
+         <p>T@gmail.com</p>
+    </div>
+     <div class="card">
+         <i class="card-icon fa fa-phone"></i>
+         <p>7815865833</p>
+    </div>
+     <div class="card">
+         <i class="card-icon fa fa-map-marker"></i>
+         <p>Sreet-1,Eluru</p>
+    </div>
+    </div>
+</div>
+
+
+<div class="last">All Rights Reserved. © 2021 Hypothetical-questioning Design By : Teja-Codes</div>
+</body>
+</html>
